@@ -67,3 +67,7 @@ run().catch(err => {
     console.error(err);
     core.setFailed("Unexpected error");
 });
+
+if (require.main === module) {
+    run();
+}
